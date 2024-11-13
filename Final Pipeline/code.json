@@ -1,0 +1,123 @@
+{
+    "name": "GetDataFromAPI",
+    "objectId": "c45788f6-b919-4b2c-aaf8-deaa52eb82da",
+    "properties": {
+        "activities": [
+            {
+                "name": "GetDataFromAPI",
+                "type": "Copy",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "typeProperties": {
+                    "source": {
+                        "type": "RestSource",
+                        "httpRequestTimeout": "00:01:40",
+                        "requestInterval": "00.00:00:00.010",
+                        "requestMethod": "GET",
+                        "paginationRules": {
+                            "supportRFC5988": "true"
+                        },
+                        "datasetSettings": {
+                            "annotations": [],
+                            "type": "RestResource",
+                            "typeProperties": {
+                                "relativeUrl": "?q=news&apiKey=5cc330e8911f43d7ba8fff6f7a9b5fc2"
+                            },
+                            "schema": [],
+                            "externalReferences": {
+                                "connection": "c0ab4142-b2c7-4629-be04-e196f769a847"
+                            }
+                        }
+                    },
+                    "sink": {
+                        "type": "JsonSink",
+                        "storeSettings": {
+                            "type": "LakehouseWriteSettings"
+                        },
+                        "formatSettings": {
+                            "type": "JsonWriteSettings"
+                        },
+                        "datasetSettings": {
+                            "annotations": [],
+                            "linkedService": {
+                                "name": "OpenWealth_Lakehouse",
+                                "properties": {
+                                    "annotations": [],
+                                    "type": "Lakehouse",
+                                    "typeProperties": {
+                                        "workspaceId": "0ff8c18b-e67d-4793-93ad-1e732b9dce30",
+                                        "artifactId": "08a47359-5cf4-47a2-b45d-c1d82a5fa59f",
+                                        "rootFolder": "Files"
+                                    }
+                                }
+                            },
+                            "type": "Json",
+                            "typeProperties": {
+                                "location": {
+                                    "type": "LakehouseLocation",
+                                    "fileName": "News.json"
+                                }
+                            },
+                            "schema": {}
+                        }
+                    },
+                    "enableStaging": false
+                }
+            },
+            {
+                "name": "Data Transformation",
+                "type": "TridentNotebook",
+                "dependsOn": [
+                    {
+                        "activity": "GetDataFromAPI",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "typeProperties": {
+                    "notebookId": "0146b06b-46a9-45cf-a49a-2b0d1a6a1d42",
+                    "workspaceId": "0ff8c18b-e67d-4793-93ad-1e732b9dce30"
+                }
+            },
+            {
+                "name": "Sentiment Analysis",
+                "type": "TridentNotebook",
+                "dependsOn": [
+                    {
+                        "activity": "Data Transformation",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "typeProperties": {
+                    "notebookId": "361fa97e-7b70-4332-8074-e7afa51dc8f6",
+                    "workspaceId": "0ff8c18b-e67d-4793-93ad-1e732b9dce30"
+                }
+            }
+        ],
+        "lastModifiedByObjectId": "5d33960c-8da1-4462-a18d-bc012e38d0c9",
+        "lastPublishTime": "2024-10-31T18:15:34Z"
+    }
+}
