@@ -24,8 +24,3 @@ Spark Code = https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/b
 requirements in this dashboard I have configuration in a way that every time when I open this report only the latest news that are published in the last 24 hours will 
 be displayed.
 Dashboard = https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/tree/main/PowerBI%20Report
-
-![Pipeline](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/Final%20Pipeline/Pipeline.png)
-![Dashboard](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/Dashboard_1.png)
-![Dashboard](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/Dashboard_2.png)
-
