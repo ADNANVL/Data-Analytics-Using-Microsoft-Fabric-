@@ -26,5 +26,6 @@ be displayed.
 Dashboard = https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/tree/main/PowerBI%20Report
 
 ![Pipeline](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/Final%20Pipeline/Pipeline.png)
-![Dashboard](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/PowerBI%20Report/News_Dashboard_.pdf)
+![Dashboard](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/Dashboard_1.png)
+![Dashboard](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/Dashboard_2.png)
 
