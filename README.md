@@ -25,6 +25,6 @@ requirements in this dashboard I have configuration in a way that every time whe
 be displayed.
 Dashboard = https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/tree/main/PowerBI%20Report
 
-![Screenshot (270)](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/Final%20Pipeline/Pipeline.png)
-![Screenshot 2024-04-23 145306](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/PowerBI%20Report/News_Dashboard_.pdf)
+![Pipeline](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/Final%20Pipeline/Pipeline.png)
+![Dashboard](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/PowerBI%20Report/News_Dashboard_.pdf)
 
