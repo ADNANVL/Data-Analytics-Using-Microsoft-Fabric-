@@ -25,8 +25,6 @@ requirements in this dashboard I have configuration in a way that every time whe
 be displayed.
 Dashboard = https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/tree/main/PowerBI%20Report
 
-![Screenshot (270)](https://github.com/AtharvTarte/Bing-News-Analysis/assets/129486843/7e443cc4-b910-4f0e-8aad-778cd19bcd83)
-![Screenshot 2024-04-23 145306](https://github.com/AtharvTarte/Bing-News-Analysis/assets/129486843/5c89b059-c924-4518-bb68-d3abaec0f167)
-![Screenshot 2024-04-23 145405](https://github.com/AtharvTarte/Bing-News-Analysis/assets/129486843/101e585b-4f46-4c69-9268-227938b1c09f)
-![Screenshot (271)](https://github.com/AtharvTarte/Bing-News-Analysis/assets/129486843/c002456c-68a7-4520-9eb2-315c8b308bfe)
-![Screenshot 2024-04-23 145639](https://github.com/AtharvTarte/Bing-News-Analysis/assets/129486843/577333b5-3b21-43bf-bc39-5534934b51d4)
+![Screenshot (270)](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/Final%20Pipeline/Pipeline.png)
+![Screenshot 2024-04-23 145306](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/PowerBI%20Report/News_Dashboard_.pdf)
+
