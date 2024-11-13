@@ -10,10 +10,9 @@ breakdown of the journey:
 ![workflow](https://github.com/AtharvTarte/Bing-News-Analysis/assets/129486843/5ee6d206-1278-42a1-aab8-c291b68e4ef8)
 
 1️⃣ Data Ingestion: Created pipeline in data Factory which connects to Bing API and ingest all the latest news articles as a raw json structure to the lakehouse.
-Source Code = https://github.com/AtharvTarte/Bing-News-Analysis/blob/abff579c4ff2295a8e387142cce461f52e6d938f/Data%20Ingestion/copy%20latest%20news.json
+Source Code = https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/tree/main/Data%20Ingestion
 
-2️⃣ Synapse Data Engineering: Used synapse data engineering component to read the ingested raw json file and process it to a clean and structured Delta table and load 
-that into the same Lakehouse database.
+2️⃣ Synapse Data Engineering: Used synapse data engineering component to read the ingested raw json file and process it to a clean and structured Delta table and load that into the same Lakehouse database.
 Source Code = https://github.com/AtharvTarte/Bing-News-Analysis/blob/abff579c4ff2295a8e387142cce461f52e6d938f/Synapse%20Data%20Engineering/Data%20Transformation.json 
 Spark Code = https://github.com/AtharvTarte/Bing-News-Analysis/blob/abff579c4ff2295a8e387142cce461f52e6d938f/Synapse%20Data%20Engineering/process_bing_news.ipynb
 
