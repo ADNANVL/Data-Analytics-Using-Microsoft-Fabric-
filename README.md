@@ -7,7 +7,7 @@ In this project, I have created an end to end solution for analyzing the latest 
 breakdown of the journey:
 
 
-![workflow]()
+![workflow](https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/blob/main/Final%20Pipeline/Pipeline.png)
 
 1️⃣ Data Ingestion: Created pipeline in data Factory which connects to Bing API and ingest all the latest news articles as a raw json structure to the lakehouse.
 Source Code = https://github.com/ADNANVL/Data-Analytics-Using-Microsoft-Fabric-/tree/main/Data%20Ingestion
